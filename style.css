@@ -1,0 +1,11 @@
+[class*="container"] {
+    min-height:100px;
+    background-color:cadetblue;
+    border: 1px solid black;
+}
+
+[class*="col"] {
+    min-height: 25px;
+    border: 1px solid red;
+}
+
