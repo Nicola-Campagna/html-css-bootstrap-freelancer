@@ -1,134 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous">
-     
-    <!-- css  -->
-    <link rel="stylesheet" href="style.css">
+	<!-- META TAGS -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bootstrap</title>
+	<!-- TITLE -->
+	<title>Bootstrap Freelancer</title>
+
+	<!-- BOOTSTRAP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-        <!-- RIGA 1 -->
-            <div class="row justify-content-between align-items-center">
-                <div class="col-auto"></div>
-                <div class="col-auto col-md-3"></div>
+	<header id="header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="#">PORTFOLIO</a>
+                  <a class="nav-link" href="#">ABOUT</a>
+                  <a class="nav-link" href="#">CONTACTS</a>
+                </div>
+              </div>
             </div>
-        </div>
-    </header>
+          </nav>
 
-    <main>
-        <div class="container green">
-            <!-- RIGA 2 -->
-            <div class="row justify-content-center">
-                <div class="col-6">img</div>
-                <div class="col-8">text img</div>
-                <div class="col-5">stars img</div>
-                <div class="col-9">
-                    <div class="row justify-content-between">
-                        <div class="col-auto">graphh</div>
-                        <div class="col-auto">graphh</div>
-                        <div class="col-auto">graphh</div>
-                    </div>
-                </div>
+		<!-- TODO: INSERIRE IL COMPONENTE NAVBAR -->
+
+	</header>
+
+	<main>
+		<!-- JUMBOTRON -->
+		<section id="jumbotron" class="d-flex flex-column align-items-center text-center text-uppercase py-5">
+			<div class="box box-img">
+				<img src="./img/img/avatar.svg" alt="">
+			</div>
+			<h1>START BOOTSTRAP</h1>
+			<div class="box box-icon">
+                <div class="star-bars"></div>
+                <!-- star icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40%" height="20%" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                </svg>
+                <div class="star-bars"></div>
+                  
             </div>
-        </div>
-        <section class="portfolio">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-6">portfolio</div>
-                    <div class="col-8">star img</div>
-                </div>
+            <div>
+                <ul class="d-flex justify-content-center text-center">
+                    <li><a href="#">GRAPHIC ARTIST</a></li>
+                    <li><a href="#">WEB DESIGNER</a></li>
+                    <li><a href="#">ILLUSTRATOR</a></li>
+                </ul>
             </div>
-            <section class="porfolio">
-                <div class="container">
-                    <div class="row row-cols-1 justify-content-center">
-                        <div class="col">Portfolio</div>
-                        <div class="col">stars img</div>
-                    </div>
-                    <div class="row row-sm-cols-1 row-md-cols-2 row-lg-cols-3justify-content-center">
-                        <div class="col-sm-12 col-md-6 col-lg-4">img portfolio</div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">img portfolio</div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">img portfolio</div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">img portfolio</div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">img portfolio</div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">img portfolio</div>
-                    </div>
-                </div>
-            </section>
+		</section>
 
-            <section class="about">
-                <div class="container green">
-                    <div class="row row-cols-1 justify-content-center">
-                        <div class="col">about</div>
-                        <div class="col">stars imgs</div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-7 col-md-6">text about</div>
-                        <div class="col-7 col-md-6">text about</div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-auto">download</div>
-                    </div>
-                </div>
-            </section>
+		<!-- PORTFOLIO -->
+		<section id="portfolio" class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-column align-items-center text-center">
+						<h1>
+							PORTFOLIO
+						</h1>
+						<div class="box box-icon">
+                            <div class="star-bars"></div>
+                            <!-- star icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40%" height="20%" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <div class="star-bars"></div>
+						</div>
+					</div>
+				</div>
 
-            <section class="address">
-                <div class="container">
-                    <div class="row row-cols-1 justify-content-center">
-                        <div class="col">contancts</div>
-                        <div class="col">stars img</div>
-                    </div>
-
-                    <div class="row row-cols-1">
-                        <div class="col">name</div>
-                        <div class="col">surname</div>
-                        <div class="col">text</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="info">
-                <div class="container">
-                    <div class="row row-cols-1 row-md-cols-3">
-                        <div class="col">
-                            <div class="row row-cols-1 justify-content-center">
-                                <div class="col">location</div>
-                                <div class="col">indr.post.</div>
-                            </div>
-                            <div class="row row-cols-1 justify-content-center">
-                                <div class="col">around the web</div>
-                                <div class="col">img social</div>
-                            </div>
-                            <div class="row row-cols-1 justify-content-center">
-                                <div class="col">around freelance</div>
-                                <div class="col">freelance text</div>
-                            </div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="box box-img">
+                            <img src="./img/img/cabin.png" alt="">
                         </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-    </main>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="box box-img">
+                            <img src="./img/img/cake.png" alt="">
+                        </div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="box box-img">
+                            <img src="./img/img/circus.png" alt="">
+                        </div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="box box-img">
+                            <img src="./img/img/game.png" alt="">
+                        </div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="box box-img">
+                            <img src="./img/img/safe.png" alt="">
+                        </div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="box box-img">
+                            <img src="./img/img/submarine.png" alt="">
+                        </div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <footer>
-        <div class="container green">
-            <div class="row row-cols-1 justify-content-center align-items-center">
-                <div class="col-5">copyright</div>
-            </div>
-        </div>
+		<!-- ABOUT -->
+		<section id="about" class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-column align-items-center text-center">
+						<h1>
+							ABOUT
+						</h1>
+                        <div class="box box-icon">
+                            <div class="star-bars"></div>
+                            <!-- star icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40%" height="20%" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <div class="star-bars"></div>
+                        </div>
+					</div>
+				</div>
 
-    </footer>
+				<!-- Allineamento colonne metodo 1 -->
+				<div class="row justify-content-center gy-3">
+					<div class="col-10 col-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+						placeat, cum
+						autem ipsa tenetur provident adipisci totam. Consequatur, repudiandae quas quaerat odit magnam,
+						sapiente dicta error, ratione laudantium alias expedita.</div>
+					<div class="col-10 col-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+						placeat, cum
+						autem ipsa tenetur provident adipisci totam. Consequatur, repudiandae quas quaerat odit magnam,
+						sapiente dicta error, ratione laudantium alias expedita.</div>
 
-    
+					<div class="w-100"></div>
+
+					<div class="col-auto">
+						<button type="button">
+							Download
+						</button>
+					</div>
+				</div>
+
+				<!-- Allineamento colonne metodo 2 -->
+
+				<!-- <div class="row justify-content-center">
+					<div class="col-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat, cum
+						autem ipsa tenetur provident adipisci totam. Consequatur, repudiandae quas quaerat odit magnam,
+						sapiente dicta error, ratione laudantium alias expedita.</div>
+					<div class="col-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat, cum
+						autem ipsa tenetur provident adipisci totam. Consequatur, repudiandae quas quaerat odit magnam,
+						sapiente dicta error, ratione laudantium alias expedita.</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-auto">
+						<button type="button">
+							Download
+						</button>
+					</div>
+				</div> -->
+
+
+			</div>
+		</section>
+
+
+		<!-- CONTACTS -->
+		<section id="contacts" class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-column align-items-center text-center">
+						<h1>
+							CONTACT ME
+						</h1>
+						<div class="box box-icon">
+                            <div class="box box-icon">
+                                <div class="star-bars"></div>
+                                <!-- star icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10%" height="10%" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                                <div class="star-bars"></div>
+                            </div>
+						</div>
+					</div>
+				</div>
+
+
+				<form action="https:tizianonicolai.com/lezioni/form-printer" method="GET"
+					class="row justify-content-center">
+					<div class="col-10">
+                        <label for="name">NAME</label>
+						<input type="text" id="name" name="name">
+					</div>
+					<div class="col-10">
+                        <label for="email">EMAIL ADDRESS</label>
+						<input type="email" id="email" name="email">
+					</div>
+					<div class="col-10">
+                        <label for="phone-n">PHONE NUMBER</label>
+						<input type="tel" id="phone-n" name="phone-n">
+					</div>
+					<!-- <div class="col-10">
+                        <label for="">Messa</label>
+						<input type="text" id="" name="">
+					</div> -->
+					<div class="col-10">
+                        <label for="message">Message</label>
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					</div>
+					<div class="col-10">
+                        <label for="submit"></label>
+						<input type="submit" id="submit" value="Send">
+					</div>
+				</form>
+
+			</div>
+
+
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="pt-5">
+		<section class="upper-footer">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<h3>LOCATION</h3>
+						<p>2215 John Daniel Drive Clark, MO 54435</p>
+					</div>
+					<div class="col-12 col-md-4">
+						<h3>AROUND THE WORLD</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<div class="col-12 col-md-4">
+						<h3>ABOUT FREELANCE</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+					<!-- <div class="col-12 text-center">
+						Lorem ipsum dolor sit amet.
+					</div> -->
+				</div>
+			</div>
+		</section>
+		<section class="bottom-footer text-center py-5">
+			<h4>
+				COPYRIGHT BOOLEAN FREELANCE 2023
+			</h4>
+		</section>
+
+	</footer>
+
+	<!-- CDN JAVASCRIPT PER BOOTSTRAP -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+		integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+		crossorigin="anonymous"></script> -->
 </body>
-</html>
+
+</html
