@@ -9,3 +9,10 @@
     border: 1px solid red;
 }
 
+.green{
+    background-color: #1ABC9C;
+}
+
+.footer{
+    min-height: 100px;
+}
