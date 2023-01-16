@@ -1,40 +1,19 @@
-
-
-.footer{
-    min-height: 100px;
-}
-
-ul li{
-    list-style: none;
-    /* padding: 0 1rem; */
-}
-ul li a{
-    padding: 0 1rem;
-    text-decoration: none;
-    color: inherit;
-}
-
 /* .box .box-img{
     width: 100px;
     height: 100px;
 } */
 
-img{
-   /* height: 100%; */
-   width: 100%;
-   object-fit: cover;
-}
-
 /* [class*="col"],
 #jumbotron>.box {
-	min-height: 80px;
+    min-height: 80px;
 	border: 2px dashed aqua;
 }
 
 .box.box-img {
-	height: 300px;
+    height: 300px;
 	width: 300px;
 }
+
 
 .box.box-icon {
 	height: 10px;
@@ -52,6 +31,15 @@ img{
 .navbar-dark {
 	background-color: #2c3e50 !important;
 }
+ul li{
+    list-style: none;
+    /* padding: 0 1rem; */
+}
+ul li a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: inherit;
+}
 
 #jumbotron,
 #about{
@@ -59,10 +47,29 @@ img{
     color: white;
 }
 
+#jumbotron img{
+    width: 100%;
+}
+
+.box,
+.box-icon{
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+img{
+   /* height: 100%; */
+   width: 100%;
+   object-fit: cover;
+}
 
 input{
     border: none;
     border-bottom: 1px solid lightgray;
+}
+
+.footer{
+    min-height: 100px;
 }
 
 .upper-footer{
@@ -75,12 +82,16 @@ input{
     color: #fff;
 }
 
-/* .star-bars{
-    width: 50px ;
-    padding:1px ;
-    background-color: black;
-} */
+
 
 label{
     display: block;
+}
+
+svg::after span,
+svg::before span{
+    width: 50px;
+    height: 50px;
+    padding: 0 20px;
+    background-color: black;
 }
